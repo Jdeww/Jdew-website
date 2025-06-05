@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Jdew</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi aliquam quasi doloremque velit, hic blanditiis, corporis cupiditate ab dolores totam ipsum reprehenderit expedita, dolor atque modi delectus quibusdam temporibus!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi aliquam quasi doloremque velit, hic blanditiis, corporis cupiditate ab dolores totam ipsum reprehenderit expedita, dolor atque modi delectus quibusdam temporibus!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi aliquam quasi doloremque velit, hic blanditiis, corporis cupiditate ab dolores totam ipsum reprehenderit expedita, dolor atque modi delectus quibusdam temporibus!</p>
+    <div id="project-list"></div>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="config.js"></script>
+    <script>
+        db.collection("projects").get().then(snapshot =>{
+            snapshot.forEach(doc => {
+                const data = doc.data();
+                document.getElementByI("project-list").innerHTML += `
+                    <div>
+                        <h3>${data.title}</h3>
+                        <p>${data.description}</p>
+                        <a href="${data.link}" target="_blank">view</a>
+                    </div>`;
+            });
+        });
+    </script>
 </body>
 </html>

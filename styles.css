@@ -1,5 +1,33 @@
 body{
     margin: 0;
-    background: pink;
+    background: rgb(121, 121, 121);
     text-align: center;
+}
+
+header{
+    text-align: center;
+    padding: 20px 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.top{
+    padding: 50px;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.left, .right{
+    flex: 1;
+    padding: 20px;
 }
