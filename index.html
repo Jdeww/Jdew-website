@@ -1,26 +1,27 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="project-list"></div>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
-    <script src="config.js"></script>
-    <script>
-        db.collection("projects").get().then(snapshot =>{
-            snapshot.forEach(doc => {
-                const data = doc.data();
-                document.getElementByI("project-list").innerHTML += `
-                    <div>
-                        <h3>${data.title}</h3>
-                        <p>${data.description}</p>
-                        <a href="${data.link}" target="_blank">view</a>
-                    </div>`;
-            });
-        });
-    </script>
+  <header>
+    <h1>Your Name</h1>
+    <p>Welcome to my portfolio!</p>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Project 1 - A cool thing I built</li>
+      <li>Project 2 - Another cool thing</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Contact: your.email@example.com</p>
+  </footer>
 </body>
 </html>

@@ -1,33 +1,17 @@
-body{
-    margin: 0;
-    background: rgb(121, 121, 121);
-    text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+  color: #333;
 }
 
-header{
-    text-align: center;
-    padding: 20px 0;
+header, footer {
+  text-align: center;
+  padding: 10px;
+  background: #e0e0e0;
+  border-radius: 8px;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-}
-
-.top{
-    padding: 50px;
-}
-
-.middle{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
-.left, .right{
-    flex: 1;
-    padding: 20px;
+h1, h2 {
+  color: #333366;
 }
