@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -5,11 +11,30 @@ body {
   color: #333;
 }
 
-header, footer {
-  text-align: center;
-  padding: 10px;
-  background: #e0e0e0;
-  border-radius: 8px;
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.contact {
+    flex: 1;
+
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background: #ccc;
+}
+
+.project_table, .footer_table, .header_table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
 }
 
 h1, h2 {
