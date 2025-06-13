@@ -23,20 +23,28 @@ body {
 
 }
 
-footer {
-    padding: 1rem;
-    text-align: center;
-    background: #ccc;
-}
-
 .project_table, .footer_table, .header_table {
     width: 100%;
 }
 
-td {
+.project_table, .footer_table{
     text-align: center;
 }
 
 h1, h2 {
   color: #333366;
+}
+
+.click:hover {
+    background-color: coral;
+    
+}
+
+.project_inside:hover {
+    background-color: aquamarine;
+}
+
+.top{
+    text-align: center;
+    width: 10%;
 }
