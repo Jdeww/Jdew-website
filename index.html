@@ -9,41 +9,74 @@
 <body>
     <div class = "page">
         <header>
-            <table class = "header_table">
-                <tr>
-                    <td style ="width: 60%;">Jason-wilaysono</td>
-                    <td class = "click top"><a href = "#me_id">about</a></td>
-                    <td class = "click top"><a href = "#projects_id">projects</a></td>
-                    <td class = "click top"><a href = "#contact_id">contacts</a></td>
-                </tr>
-            </table>
+            <div class = "header">
+                <div class = "top">Jason-wilaysono</div>
+                <div class = "top_one"><a href = "#about_me">about</a></div>
+                <div class = "top_two"><a href = "#projects">projects</a></div>
+                <div class = "top_three"><a href = "#contact">contact</a></div>
+            </div>
         </header>
-        <main id = "me_id" class = "me">
-            <h1>Welcome to my portfolio!</h1>
-            <p>About me (Bla-bla-bla)</p>
-        </main>
-        <main id = "projects_id" class = "projects">
-            <h1>Projects</h1>
-                <table class = "project_table">
-                    <tr>
-                        <td class = "project_inside">project 1</td>
-                        <td class = "project_inside">project 2</td>
-                    </tr>
-                </table>
-        </main>
-        <main id = "contact_id" class = "contact">
-            <h1>Contact Me</h1>
+        <main>
+            <div id="about_me"></div>
+            <div id="projects">
+                <h1>Projects</h1>
+                    <div class = "project_grid">
+                        <button class="open-modal" data-template="project-1">project 1</button>
+                        <button class="open-modal" data-template="project-2">project 2</button>
+                    </div>
+            </div>
+            <div class="contact">
+                <h1>Contact Me</h1>
+                <p>Please contact me for anything, whether it's a project idea, job opportunity, or feedback, I'd love to hear more about it. </p>
+            </div>
         </main>
         <footer>
-            <table class = "footer_table">
-                <tr>
-                    <td class = "click">Email</td>
-                    <td class = "click">Github</td>
-                    <td class = "click">LinkedIn</td>
-                    <td class = "click">Youtube</td>
-                </tr>
-            </table>
+            <div class = "footer">
+                <div class = "click"><a href="mailto:jdwilaysono@gmail.com"><img src="assets/mail.svg" alt="mail_img"></a></div>
+                <div class = "click"><a href ="https://github.com/Jdeww" target = "_blank"><img src="assets/github.svg" alt="github_img"></a></div>
+                <div class = "click"><a href="https://www.linkedin.com/in/jason-wilaysono-385737283/" target="_blank"><img src="assets/linkedin.svg" alt="linkedin_img"></a></div>
+                <div class = "click"><a href="https://www.youtube.com/@jdew" target="_blank"><img src="assets/youtube.svg" alt="youtube_img"></a></div>
+            </div>
         </footer>
     </div>
+
+
+
+    <template id = "about_info">
+        <div>
+            <h1>
+                Welcome to my portfolio!
+            </h1>
+            <p1>
+                About me (bla-bla-bla)
+            </p1>
+        </div>
+    </template>
+
+
+
+    <div id = "modal" class = "modal-overlay">
+        <div class = "modal-content">
+            <button class = "close-button" id = "modal-close"> x </button>
+            <h2 id = "modal-title">Modal Title</h2>
+            <div id = "modal-body"></div>
+        </div>
+    </div>
+
+    <template id = "project-1">
+        <div class = "project-info">
+            <h3>Hehehe haha</h3>
+            <p>yes yes yes </p>
+        </div>
+    </template>
+
+    <template id = "project-2">
+        <div class = "project-info">
+            <h3>Hehehe haha</h3>
+            <p>yes yes yes</p>
+        </div>
+    </template>
+
+    <script src="main.js"></script>
 </body>
 </html>
