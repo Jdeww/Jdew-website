@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
         about_container.appendChild(about_clone);
     }
 
+    const contact_template = document.getElementById('contact_info');
+    const contact_container = document.getElementById('contact_me');
+
+    if (contact_container && contact_template){
+        const contact_clone = contact_template.content.cloneNode(true);
+        contact_container.appendChild(contact_clone);
+    }
+
 
     const modal = document.getElementById('modal');
     const modalTitle = document.getElementById('modal-title');

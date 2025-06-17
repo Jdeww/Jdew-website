@@ -17,17 +17,32 @@
             </div>
         </header>
         <main>
+            <div>add image of me here</div>
             <div id="about_me"></div>
             <div id="projects">
-                <h1>Projects</h1>
+                <h1>Experience</h1>
                     <div class = "project_grid">
                         <button class="open-modal" data-template="project-1">project 1</button>
                         <button class="open-modal" data-template="project-2">project 2</button>
                     </div>
             </div>
-            <div class="contact">
+            <div id="contact">
                 <h1>Contact Me</h1>
-                <p>Please contact me for anything, whether it's a project idea, job opportunity, or feedback, I'd love to hear more about it. </p>
+                <div class = "contact_grid">
+                    <div id="contact_me" class="contact_inside"></div>
+                    <div class="contact_inside">
+                        <div class="contact_submit">
+                            <form id="contact-form">
+                                <div class = "contact_fill"><input type="text" name="from_name" placeholder="Your Name" required /></div>
+                                <div class = "contact_fill"><input type="email" name="reply_to" placeholder="Your Email" required /></div>
+                                <div class = "contact_fill"><input type="text" name="subject" placeholder="Subject" required /></div>
+                                <div class = "contact_fill"><textarea name="message" placeholder="Your Message" required></textarea></div>
+                                <div class = "contact_fill"><input type="text" name="website" style="display: none" tabindex="-1" autocomplete="off" /></div>
+                                <div class = "contact_fill"><button type="submit">Send</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
@@ -48,11 +63,22 @@
                 Welcome to my portfolio!
             </h1>
             <p1>
-                About me (bla-bla-bla)
+                Hi, I’m Jason, a Computer Engineering major at CSU East Bay. 
+                I've explored various positions within the STEM field as a assistant professor, tutor, and affiliate researcher.<br>
+                
+                I've made (and am making) projects out of my passion and enjoyment in being challenged.
+                You can find some of my work on youtube <a href="https://www.youtube.com/@jdew">@jdew</a>.
             </p1>
         </div>
     </template>
 
+
+    <template id="contact_info">
+        <div>
+            please contact me for a project idea, business proposal, or job opportunity. 
+            I'll gladly hear about it. 
+        </div>
+    </template>
 
 
     <div id = "modal" class = "modal-overlay">
@@ -78,5 +104,7 @@
     </template>
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="respond.js"></script>
 </body>
 </html>
