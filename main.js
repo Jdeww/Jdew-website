@@ -15,6 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
         contact_container.appendChild(contact_clone);
     }
 
+    function hideModal(){
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 250);
+    }
+
 
     const modal = document.getElementById('modal');
     const modalTitle = document.getElementById('modal-title');
@@ -37,22 +44,36 @@ document.addEventListener("DOMContentLoaded", () => {
             modalBody.appendChild(template.content.cloneNode(true));
 
             modal.style.display = 'flex';
+            requestAnimationFrame(() => {
+                modal.classList.add('show');
+            });
         });
     });
 
-    modalClose.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
+
+    modalClose.addEventListener('click', hideModal);
 
     modal.addEventListener('click', (event) => {
         if (event.target === modal) {
-            modal.style.display = 'none';
+            hideModal();
         }
     });
 
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && modal.style.display === 'flex') {
-            modal.style.display = 'none';
+        if (event.key === 'Escape' && modal.classList.contains('show')) {
+            hideModal();
         }
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if(targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({ behavior: 'smooth'});
+            }
+        });
     });
 });

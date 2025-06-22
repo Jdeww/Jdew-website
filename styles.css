@@ -1,14 +1,41 @@
+@font-face {
+    font-family: 'stolzl_book';
+    src: url('./fonts/stolzl/stolzl_book.otf') format('opentype')
+}
+
+html{
+    scroll-behavior: smooth;
+}
 h1, h2 {
   color: #333366;
 }
 
 a {
+    position: relative;
     color: #333;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     color: #696969;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transition:  transform 0.3s ease;
+}
+
+a:hover::after{
+    transform: translateX(-50%) scaleX(1);
 }
 
 html, body {
@@ -18,7 +45,8 @@ html, body {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'stolzl_book', sans-serif;
+  font-size: 20px;
   background: #f4f4f4;
   color: #333;
   margin: 0;
@@ -47,17 +75,58 @@ main {
 }
 
 .project_grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
     max-width: 90%;
     margin: auto;
 }
 
-.open-modal:hover{
-    background-color: aquamarine;
+.open-modal{
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 360px;
+    height: 260px;
+    padding: 0;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    border: none ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
+.open-modal:hover{
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 8px #8484a7;
+}
+
+.project-image {
+    height: 70%;
+    width: 100%;
+    background-color: none;
+}
+
+.project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+    margin: 0;
+    padding: 0;
+    opacity: 75%;
+}
+
+.project-text {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
 .project-grid button{
     padding: 1rem;
     font-size: 1rem;
@@ -131,6 +200,17 @@ main {
     overflow-y: auto;
     position: relative;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-overlay.show .modal-content{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-content{
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .close-button{
