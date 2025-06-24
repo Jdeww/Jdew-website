@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalBody = document.getElementById('modal-body');
     const modalClose = document.getElementById('modal-close');
 
+
     document.querySelectorAll('.open-modal').forEach(button => {
         button.addEventListener('click', () => {
             const templateId = button.getAttribute('data-template');
@@ -38,10 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            modalTitle.textContent = 'Class Information';
+            const clonedContent = template.content.cloneNode(true);
+            const titleElement = clonedContent.querySelector('h3');
+            modalTitle.textContent = titleElement ? titleElement.textContent : 'No Title';
 
             modalBody.innerHTML = '';
-            modalBody.appendChild(template.content.cloneNode(true));
+            modalBody.appendChild(clonedContent);
 
             modal.style.display = 'flex';
             requestAnimationFrame(() => {

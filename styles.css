@@ -105,6 +105,7 @@ main {
     height: 70%;
     width: 100%;
     background-color: none;
+    position: relative;
 }
 
 .project-image img{
@@ -115,6 +116,38 @@ main {
     margin: 0;
     padding: 0;
     opacity: 75%;
+}
+
+.competition, .project, .work{
+    position: absolute;
+    top: 6%;
+    left: 2%;
+    font-family: 'stolzl_book', sans-serif;
+    padding: 0.25rem 0.8rem;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(-7px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.competition{
+    background-color: rgb(211, 157, 243);
+}
+
+.project{
+    background-color: rgb(91, 160, 238);
+}
+
+.work{
+    background-color: rgb(38, 130, 44);
+}
+.open-modal:hover .competition, .open-modal:hover .project, .open-modal:hover .work{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .project-text {
