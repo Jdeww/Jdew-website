@@ -22,6 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 250);
     }
 
+    const textarea = document.getElementById("email_message");
+
+    textarea.addEventListener("input", () => {
+        textarea.style.height = "auto";
+        textarea.style.height = textarea.scrollHeight + "px"
+    });
+
 
     const modal = document.getElementById('modal');
     const modalTitle = document.getElementById('modal-title');

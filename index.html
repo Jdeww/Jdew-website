@@ -12,59 +12,66 @@
             <div class = "header">
                 <div class = "top">Jason-wilaysono</div>
                 <div class = "top_one"><a href = "#about_me">about</a></div>
-                <div class = "top_two"><a href = "#projects">projects</a></div>
+                <div class = "top_two"><a href = "#projects">experience</a></div>
                 <div class = "top_three"><a href = "#contact">contact</a></div>
             </div>
         </header>
         <main>
             <h1>Jason Wilaysono</h1>
-            <div class="about">
-                <div id="about_me"></div>
-                <div class="headshot about"><img src="./assets/headshot.jpg"></div>
+            <h2>Welcome to my portfolio!</h2>
+            <div class="centering">
+                <div class="about">
+                    <div id="about_me"></div>
+                    <div class="headshot"><img src="./assets/headshot.jpg"></div>
+                </div>
             </div>
+            <div class="padding"></div>
             <div id="projects">
                 <h2>Experience</h2>
-                    <div class = "project_grid">
-                        <button class="open-modal" data-template="project-1">
-                            <div class="project-image">
-                                <img src="assets/hackhayward.png" alt="project-1">
-                            </div>
-                            <div class = "competition">Competition🏆</div>
-                            <div class="project-text">HackHayward</div>
-                        </button>
-                        <button class="open-modal" data-template="project-2">
-                            <div class="project-image">
-                                <img src="assets/hackhayward.png" alt="project-2"/>
-                            </div>    
-                            <div class = "project">Project⚙️</div>
-                            <div class="project-text">project 2</div>
-                        </button>
-                        <button class="open-modal" data-template="project-1">
-                            <div class="project-image">
-                                <img src="assets/hackhayward.png" alt="project-1"/>
-                            </div>    
-                            <div class = "work">Work🖥️</div>
-                            <div class="project-text">project 1</div>
-                        </button>
+                    <div class="centering">
+                        <div class = "project_grid">
+                            <button class="open-modal" data-template="project-1">
+                                <div class="project-image">
+                                    <img src="assets/hackhayward.png" alt="project-1">
+                                </div>
+                                <div class = "competition">Competition🏆</div>
+                                <div class="project-text">HackHayward</div>
+                            </button>
+                            <button class="open-modal" data-template="project-2">
+                                <div class="project-image">
+                                    <img src="assets/hackhayward.png" alt="project-2"/>
+                                </div>    
+                                <div class = "project">Project⚙️</div>
+                                <div class="project-text">project 2</div>
+                            </button>
+                            <button class="open-modal" data-template="project-1">
+                                <div class="project-image">
+                                    <img src="assets/hackhayward.png" alt="project-1"/>
+                                </div>    
+                                <div class = "work">Work🖥️</div>
+                                <div class="project-text">project 1</div>
+                            </button>
+                        </div>
                     </div>
             </div>
+            <div class="padding"></div>
             <div id="contact">
-                <h1>Contact Me</h1>
+                <h2>Contact Me</h2>
                 <div class = "contact_grid">
                     <div id="contact_me" class="contact_inside"></div>
                     <div class="contact_inside">
                         <div class="contact_submit">
                             <form id="contact-form">
-                                <div class = "contact_fill">Name:</div>
+                                <div class = "contact_label">Name:</div>
                                 <div class = "contact_fill"><input type="text" name="from_name" placeholder="Your Name" required /></div>
-                                <div class = "contact_fill">Email:</div>
+                                <div class = "contact_label">Email:</div>
                                 <div class = "contact_fill"><input type="email" name="reply_to" placeholder="Your Email" required /></div>
-                                <div class = "contact_fill">Subject</div>
+                                <div class = "contact_label">Subject: </div>
                                 <div class = "contact_fill"><input type="text" name="subject" placeholder="Subject" required /></div>
-                                <div class = "contact_fill">Message</div>
-                                <div class = "contact_fill"><textarea name="message" placeholder="Your Message" required></textarea></div>
+                                <div class = "contact_label">Message: </div>
+                                <div class = "contact_fill"><textarea id="email_message" placeholder="Your Message" required></textarea></div>
                                 <div><input type="text" name="website" style="display: none" tabindex="-1" autocomplete="off" /></div>
-                                <div class = "contact_fill"><button type="submit">Send</button></div>
+                                <div><button type="submit" class="contact_send">Send</button></div>
                             </form>
                         </div>
                     </div>
@@ -85,9 +92,6 @@
 
     <template id = "about_info">
         <div>
-            <h2>
-                Welcome to my portfolio!
-            </h2>
             <p1>
                 Hi, I’m Jason, a Computer Engineering major at CSU East Bay. 
                 I've explored various positions within the STEM field as a assistant professor, tutor, and affiliate researcher.<br>
