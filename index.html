@@ -11,18 +11,28 @@
         <header>
             <div class = "header">
                 <div class = "top">Jason-wilaysono</div>
-                <div class = "top_one"><a href = "#about_me">about</a></div>
-                <div class = "top_two"><a href = "#projects">experience</a></div>
-                <div class = "top_three"><a href = "#contact">contact</a></div>
+                <div class = "top"><a href = "#about">about</a></div>
+                <div class = "top"><a href = "#projects">experience</a></div>
+                <div class = "top"><a href = "#contact">contact</a></div>
             </div>
         </header>
         <main>
-            <h1>Jason Wilaysono</h1>
-            <h2>Welcome to my portfolio!</h2>
-            <div class="centering">
-                <div class="about">
-                    <div id="about_me"></div>
-                    <div class="headshot"><img src="./assets/headshot.jpg"></div>
+            <div class="landing">
+                <h1 id="typing"></h1>
+                <div class="options">
+                    <div class = "landing_option"><a href = "#about">• about</a></div>
+                    <div class = "landing_option"><a href = "#projects">• experience</a></div>
+                    <div class = "landing_option"><a href = "#contact">• contact</a></div>
+                </div>
+            </div>
+            <div class="padding"></div>
+            <div id="about">
+                <h2>Welcome to my portfolio!</h2>
+                <div class="centering">
+                    <div class="about_grid">
+                        <div id="about_me"></div>
+                        <div class="headshot"><img src="./assets/headshot.jpg"></div>
+                    </div>
                 </div>
             </div>
             <div class="padding"></div>
@@ -77,6 +87,7 @@
                     </div>
                 </div>
             </div>
+            <div class="padding"></div>
         </main>
         <footer>
             <div class = "footer">
@@ -92,29 +103,31 @@
 
     <template id = "about_info">
         <div>
-            <p1>
-                Hi, I’m Jason, a Computer Engineering major at CSU East Bay. 
-                I've explored various positions within the STEM field as a assistant professor, tutor, and affiliate researcher.<br>
-                
-                I've made (and am making) projects out of my passion and enjoyment in being challenged.
-                You can find some of my work on youtube <a href="https://www.youtube.com/@jdew" target="_blank">@jdew</a>.
-            </p1>
+            <p>
+                Hi, I’m Jason, a Computer Engineering major at CSU East Bay.
+                I've explored various positions within the STEM field as an assistant professor, tutor, and affiliate researcher. These roles have allowed me to deepen my understanding of engineering principles while sharing knowledge and supporting others in their learning journeys.
+                <br><br>'ve made (and am making) projects out of my passion and enjoyment in being challenged. Whether through academic research or hands-on development, I enjoy pushing my limits and turning ideas into reality.
+                You can find some of my work on YouTube, where I showcase the projects I’ve built, from concept to completion, as a reflection of both my curiosity and technical growth.<a href="https://www.youtube.com/@jdew" target="_blank">@jdew</a>.
+            </p>
         </div>
     </template>
 
 
     <template id="contact_info">
-        <div>
-            please contact me for a project idea, business proposal, or job opportunity. 
-            I'll gladly hear about it. 
-        </div>
+        <p>
+            Please feel free to contact me if you have a project idea, business proposal, or job opportunity you'd like to share. 
+            I'm always open to exploring new collaborations, creative ventures, and meaningful work that aligns with my skills and passions. 
+            Whether you're looking for a developer to bring your vision to life, a teammate to contribute to your startup, or simply someone to brainstorm technical possibilities with, I’d be glad to hear from you. 
+            I value innovative thinking, clear communication, and long-term growth. 
+            Let’s connect and see how we can work together to build something impactful and exciting.
+        </p>
     </template>
 
 
     <div id = "modal" class = "modal-overlay">
         <div class = "modal-content">
             <button class = "close-button" id = "modal-close"> x </button>
-            <h2 id = "modal-title">Modal Title</h2>
+            <h3 id = "modal-title">Modal Title</h3>
             <div id = "modal-body"></div>
         </div>
     </div>

@@ -1,4 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector("header");
+    const landing = document.querySelector(".landing");
+
+    const toggleHeader = () => {
+        const landingBottom = landing.getBoundingClientRect().bottom;
+        if (landingBottom <= 0) {
+            header.classList.add("show");
+        } else {
+            header.classList.remove("show");
+        }
+    };
+
+    window.addEventListener("scroll", toggleHeader);
+
+    const text = "Jason Wilaysono"
+    const speed = 100;
+    let i = 0;
+    const typingElement = document.getElementById('typing');
+
+    function type() {
+        if (i < text.length) {
+            typingElement.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+    
     const about_template = document.getElementById('about_info');
     const about_container = document.getElementById('about_me'); 
 
