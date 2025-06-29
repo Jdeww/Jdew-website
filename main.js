@@ -13,14 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", toggleHeader);
 
-    const text = "Jason Wilaysono"
+    const text_1 = "Jason";
+    const text_2 = "Wilaysono";
     const speed = 100;
     let i = 0;
-    const typingElement = document.getElementById('typing');
+    const typingElement_1 = document.getElementById('typing_1');
+    const typingElement_2 = document.getElementById('typing_2');
 
     function type() {
-        if (i < text.length) {
-            typingElement.textContent += text.charAt(i);
+        if (i < text_1.length) {
+            typingElement_1.textContent += text_1.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else if (i < text_2.length + text_1.length) {
+            typingElement_2.textContent += text_2.charAt(i - text_1.length);
             i++;
             setTimeout(type, speed);
         }
