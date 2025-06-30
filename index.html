@@ -7,93 +7,95 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class = "page">
-        <header>
-            <div class = "header">
-                <div class = "top">Jason-wilaysono</div>
-                <div class = "top"><a href = "#about">about</a></div>
-                <div class = "top"><a href = "#projects">experience</a></div>
-                <div class = "top"><a href = "#contact">contact</a></div>
-            </div>
-        </header>
-        <main>
-            <div class="landing">
-                <div class="landing_name">
-                    <h3>Hi, my name is</h3>
-                    <h1 id="typing_1"> </h1>
-                    <h1 id="typing_2"> </h1>
+    <div class="background">
+        <div class = "page">
+            <header>
+                <div class = "header">
+                    <div class = "top">Jason-wilaysono</div>
+                    <div class = "top"><a href = "#about">about</a></div>
+                    <div class = "top"><a href = "#projects">experience</a></div>
+                    <div class = "top"><a href = "#contact">contact</a></div>
                 </div>
-                <div class="options">
-                    <div class = "landing_option"><a href = "#about">• about</a></div>
-                    <div class = "landing_option"><a href = "#projects">• experience</a></div>
-                    <div class = "landing_option"><a href = "#contact">• contact</a></div>
-                </div>
-            </div>
-            <div class="padding"></div>
-            <div id="about">
-                <h2>Welcome to my portfolio!</h2>
-                <div class="centering">
-                    <div class="about_grid">
-                        <div id="about_me"></div>
-                        <div class="headshot"><img src="./assets/headshot.jpg"></div>
+            </header>
+            <main>
+                <div class="landing">
+                    <div class="landing_name">
+                        <h3>Hi, my name is</h3>
+                        <h1 id="typing_1"> </h1>
+                        <h1 id="typing_2"> </h1>
+                    </div>
+                    <div class="options">
+                        <div class = "landing_option"><a href = "#about">• about</a></div>
+                        <div class = "landing_option"><a href = "#projects">• experience</a></div>
+                        <div class = "landing_option"><a href = "#contact">• contact</a></div>
                     </div>
                 </div>
-            </div>
-            <div class="padding"></div>
-            <div id="projects">
-                <h2>Experience</h2>
+                <div class="padding"></div>
+                <div id="about">
+                    <h2>Welcome to my portfolio!</h2>
                     <div class="centering">
-                        <div class = "project_grid">
-                            <button class="open-modal" data-template="HackHayward">
-                                <div class="project-image">
-                                    <img src="assets/hackhayward.png" alt="project-1">
-                                </div>
-                                <div class = "competition">Competition🏆</div>
-                                <div class="project-text">HackHayward</div>
-                            </button>  
-                            <button class="open-modal" data-template="Learning_assistant">
-                                <div class="project-image">
-                                    <img src="assets/STEM LAB.png" alt="project-1"/>
-                                </div>    
-                                <div class = "work">Work🖥️</div>
-                                <div class="project-text">Learning Assistant</div>
-                            </button>
-                            <div class = "project">Project⚙️</div>
+                        <div class="about_grid">
+                            <div id="about_me"></div>
+                            <div class="headshot"><img src="./assets/headshot.jpg"></div>
                         </div>
                     </div>
-            </div>
-            <div class="padding"></div>
-            <div id="contact">
-                <h2>Contact Me</h2>
-                <div class = "contact_grid">
-                    <div class="contact_inside">
-                        <div id="contact_me"></div>
-                    </div>
-                    <div class="contact_submit">
-                        <form id="contact-form">
-                            <div class = "contact_label">Name:</div>
-                            <div class = "contact_fill"><input type="text" name="from_name" placeholder="Your Name" required /></div>
-                            <div class = "contact_label">Email:</div>
-                            <div class = "contact_fill"><input type="email" name="reply_to" placeholder="Your Email" required /></div>
-                            <div class = "contact_label">Subject: </div>
-                            <div class = "contact_fill"><input type="text" name="subject" placeholder="Subject" required /></div>
-                            <div class = "contact_label">Message: </div>
-                            <div class = "contact_fill"><textarea id="email_message" placeholder="Your Message" required></textarea></div>
-                            <div><input type="text" name="website" style="display: none" tabindex="-1" autocomplete="off" /></div>                                <div><button type="submit" class="contact_send">Send</button></div>
-                            </form>
+                </div>
+                <div class="padding"></div>
+                <div id="projects">
+                    <h2>Experience</h2>
+                        <div class="centering">
+                            <div class = "project_grid">
+                                <button class="open-modal" data-template="HackHayward">
+                                    <div class="project-image">
+                                        <img src="assets/hackhayward.png" alt="project-1">
+                                    </div>
+                                    <div class = "competition">Competition🏆</div>
+                                    <div class="project-text">HackHayward</div>
+                                </button>  
+                                <button class="open-modal" data-template="Learning_assistant">
+                                    <div class="project-image">
+                                        <img src="assets/STEM LAB.png" alt="project-1"/>
+                                    </div>    
+                                    <div class = "work">Work🖥️</div>
+                                    <div class="project-text">Learning Assistant</div>
+                                </button>
+                                <div class = "project">Project⚙️</div>
+                            </div>
+                        </div>
+                </div>
+                <div class="padding"></div>
+                <div id="contact">
+                    <h2>Contact Me</h2>
+                    <div class = "contact_grid">
+                        <div class="contact_inside">
+                            <div id="contact_me"></div>
+                        </div>
+                        <div class="contact_submit">
+                            <form id="contact-form">
+                                <div class = "contact_label">Name:</div>
+                                <div class = "contact_fill"><input type="text" name="from_name" placeholder="Your Name" required /></div>
+                                <div class = "contact_label">Email:</div>
+                                <div class = "contact_fill"><input type="email" name="reply_to" placeholder="Your Email" required /></div>
+                                <div class = "contact_label">Subject: </div>
+                                <div class = "contact_fill"><input type="text" name="subject" placeholder="Subject" required /></div>
+                                <div class = "contact_label">Message: </div>
+                                <div class = "contact_fill"><textarea id="email_message" placeholder="Your Message" required></textarea></div>
+                                <div><input type="text" name="website" style="display: none" tabindex="-1" autocomplete="off" /></div>                                <div><button type="submit" class="contact_send">Send</button></div>
+                                </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="padding"></div>
-        </main>
-        <footer>
-            <div class = "footer">
-                <div class = "click"><a href="mailto:jdwilaysono@gmail.com"><img src="assets/mail.svg" alt="mail_img"></a></div>
-                <div class = "click"><a href ="https://github.com/Jdeww" target = "_blank"><img src="assets/github.svg" alt="github_img"></a></div>
-                <div class = "click"><a href="https://www.linkedin.com/in/jason-wilaysono-385737283/" target="_blank"><img src="assets/linkedin.svg" alt="linkedin_img"></a></div>
-                <div class = "click"><a href="https://www.youtube.com/@jdew" target="_blank"><img src="assets/youtube.svg" alt="youtube_img"></a></div>
-            </div>
-        </footer>
+                <div class="padding"></div>
+            </main>
+            <footer>
+                <div class = "footer">
+                    <div class = "click"><a href="mailto:jdwilaysono@gmail.com"><img src="assets/mail.svg" alt="mail_img"></a></div>
+                    <div class = "click"><a href ="https://github.com/Jdeww" target = "_blank"><img src="assets/github.svg" alt="github_img"></a></div>
+                    <div class = "click"><a href="https://www.linkedin.com/in/jason-wilaysono-385737283/" target="_blank"><img src="assets/linkedin.svg" alt="linkedin_img"></a></div>
+                    <div class = "click"><a href="https://www.youtube.com/@jdew" target="_blank"><img src="assets/youtube.svg" alt="youtube_img"></a></div>
+                </div>
+            </footer>
+        </div>
     </div>
 
 
