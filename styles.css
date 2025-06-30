@@ -22,7 +22,7 @@ h1{
 }
 
 h2 { 
-    margin-left: 1.5rem;
+    margin-left: 6rem;
     font-size: clamp(1.5rem, 5.3vw, 6rem);
     background-color: #cad2c5;
     max-width: max-content;
@@ -125,12 +125,12 @@ main {
 .landing_name h1{
     margin: 0;
     min-height: 1.3em;
-    margin-left: 2rem;
+    margin-left: 7rem;
 }
 
 .landing_name h3{
     margin: 0;
-    margin-left: 1rem;
+    margin-left: 6rem;
     letter-spacing: 1px;
 }
 
