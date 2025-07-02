@@ -50,6 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
         contact_container.appendChild(contact_clone);
     }
 
+    const resume = document.getElementById('resume');
+
+    resume.addEventListener("click", function() {
+        window.open("/assets/resume.pdf", "_blank")
+    })
+
     function hideModal(){
         modal.classList.remove('show');
         setTimeout(() => {
