@@ -225,7 +225,7 @@ main {
     position: relative;
     height: 80%;
     opacity: 75%;
-    top: -20%;
+    top: -5%;
     border-radius: 20px;
     transition: all 1.2s ease;
     scale: 100%;
@@ -251,7 +251,7 @@ main {
 .project-text {
     position: absolute;
     bottom: 0%;
-    height: 35%;
+    height: 25%;
     width: 100%;
     display: flex;
     justify-content:start;
