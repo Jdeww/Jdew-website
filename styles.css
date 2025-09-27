@@ -203,7 +203,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    max-width: max-content;
+    max-width: 91.75rem;
     justify-content: flex-start;
 }
 
