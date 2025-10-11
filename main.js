@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resume = document.getElementById('resume');
 
     resume.addEventListener("click", function() {
-        window.open("/assets/resume.pdf", "_blank")
+        window.open("assets/resume.pdf", "_blank")
     })
 
     function hideModal(){
