@@ -218,7 +218,7 @@ main {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .project-image {
@@ -226,7 +226,7 @@ main {
     height: 80%;
     opacity: 75%;
     top: -5%;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     transition: all 1.2s ease;
     scale: 100%;
     overflow: hidden;
